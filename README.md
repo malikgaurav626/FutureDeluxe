@@ -1,6 +1,6 @@
 # Future Deluxe - Shopping Web App
 
-![Future Deluxe Logo](./public/apple-touch-icon.png)
+![Future Deluxe Logo](https://i.ibb.co/5RWD4n8/android-chrome-192x192.png)
 
 Future Deluxe is a shopping web app inspired by Bethesda's new RPG, Starfield. It's an experimental project aimed at exploring optimal layouts and animation techniques. This project showcases a sleek and futuristic user interface, drawing inspiration from the captivating in-game UI and color schemes of Starfield and a pint of inspiration from vectors.
 
@@ -18,7 +18,7 @@ Future Deluxe is a shopping web app inspired by Bethesda's new RPG, Starfield. I
 
 For a live demo of Future Deluxe, visit [https://futuredeluxe.netlify.app](https://futuredeluxe.netlify.app)
 
-![Future Deluxe Screenshot](./images/screenshot.png)
+![Future Deluxe Screenshot](https://i.ibb.co/GCZDC5k/Screenshot-2023-09-24-174501.png)
 
 ## Features
 
