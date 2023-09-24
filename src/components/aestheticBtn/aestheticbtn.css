@@ -1,0 +1,57 @@
+.nav-btn{
+    background-color: transparent !important;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    /* border: 1px solid #c5c6d5; */
+    color: #c5c6d5;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 150px;
+    height: 30px;
+    font-family: "TG Axima Black";
+    transition: 0.3s ease;
+}
+.nav-btn::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 1.0;
+    content: '';
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    border: 3.5px solid #c5c6d500;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+.nav-btn:hover{
+    scale: 1.1;
+    transition: 0.3s ease;
+    background: transparent;
+}
+.nav-btn:hover::before {
+    width: 100%;
+    border-bottom: 3.5px solid #c5c6d5;
+    transition: 0.5s;
+}
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+
+
+@media (max-width: 576px) {
+    .nav-btn{
+        top: 0;
+        right: 0;
+    }
+}

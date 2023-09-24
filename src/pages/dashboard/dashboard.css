@@ -1,0 +1,246 @@
+.dashboard-container{
+    opacity: 0;
+    animation: animata-fadeIn 0.4s ease 0.2s 1 forwards;
+}
+.dashboard-vapor-squad{
+    position: absolute;
+    writing-mode: vertical-rl;
+    bottom: 0px;
+    right: 0px;
+    margin: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.dashboard-main-heading{
+    margin: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 0;
+    left: 0;
+}
+.card-img-top{
+    max-width: 250px;
+    width: 100%;
+    border-radius: 0px;
+    max-height: 250px;
+}
+.card-column{
+    height: fit-content !important;
+}
+.card{
+    background-color: transparent;
+    border-radius: 0px;
+    border: 2px solid #c5c6d5 !important;
+    /* box-shadow: 0px 0px 2px 0px #f03869, inset 0px 0px 2px 0px #f03869; */
+    box-shadow: 0px 0px 2px 0px #c5c6d5, inset 0px 0px 2px 0px #c5c6d5;
+    /* border: none; */
+    min-height: 330px;
+}
+.dashboard-btn{
+    border: 1px solid #27a880;
+    box-shadow: 0px 0px 0.5px 0.5px #27a880, inset 0px 0px 0.5px 0.5px #27a880;
+    color: #27a880;
+    text-shadow: 0px 0px 0.5px #27a880;
+    background: transparent;
+    transition: 0.1s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 140px;
+}
+.dashboard-btn:hover{
+    background-color: #27a880;
+    color: #1b1e26;
+    text-shadow: 0px 0px 0.5px #1b1e26;
+    transition: 0.1s;
+}
+.dashboard-product-name{
+    color: #f03869;
+    text-shadow: 0px 0px 0.5px #f03869;
+    width: 100%;
+}
+.dashboard-filter-heading{
+    background-color: #c5c6d5;
+    box-shadow: 0px 0px 1px 1px #c5c6d5;
+    color: #1b1e26 !important;
+    text-shadow: 0px 0px 0.5px #1b1e26;
+    /* #6a8be9 */
+    width: 100%;
+    font-family: 'TG Axima Black';
+    letter-spacing: 0.5px;
+}
+.filter-column{
+    border: 1px solid #c5c6d5;
+    box-shadow: 0px 0px 1px 1px #c5c6d5, inset 0px 0px 1px 1px #c5c6d5;
+    height: fit-content;
+}
+.navbar-toggler{
+    font-family: "TG Axima Heavy";
+    color: #1b1e26;
+}
+.sort-by{
+    font-size: 10px;
+    margin-top: 10px !important;
+    margin-left: 5px;
+    margin-bottom: 0 !important;
+    text-align: left !important;
+}
+.category{
+    border: 1px solid #668bec;
+    box-shadow: 0px 0px 0.5px 0.5px #668bec,inset 0px 0px 0.5px 0.5px #668bec;
+    color: #668bec;
+    text-shadow: 0px 0px 1px #668bec;
+    border-radius: 1px;
+    width: 65px;
+    height: fit-content !important;
+    padding: 5px 10px;
+    margin: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #1b1e26;
+    max-width: 90px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category:hover{
+    background-color: #668bec;
+    color: #1b1e26;
+    text-shadow: 0px 0px 1px #1b1e26;
+}
+.category-active{
+    background-color: #668bec;
+    color: #1b1e26;
+    text-shadow:0px 0px 1px #1b1e26;
+}
+.category-options{
+    font-family: 'TG Axima Medium';
+    text-shadow: 0px 0px 1px #668bec !important;
+}
+.product-description{
+    padding-right: 2px;
+    max-width: 250px;
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #c5c6d5;
+    text-shadow: 0px 0px 0.5px #c5c6d5;
+    font-family: 'TG Axima light';
+}
+.product-description::-webkit-scrollbar{
+    width: 1px;
+}
+.product-description::-webkit-scrollbar-track{
+    background-color: #1b1e26;
+}
+.product-description::-webkit-scrollbar-thumb{
+    background-color: #c5c6d5;
+}
+.external-link-heading{
+    cursor: pointer;
+}
+.external-link-heading:hover{
+    text-decoration: underline;
+}
+.external-link-heading:hover .external-link{
+    width: 15px;
+    height: 15px;
+    transform: 0.2s;
+}
+.external-link{
+    width: 10px;
+    height: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+.external-link:hover{
+    width: 15px;
+    height: 15px;
+    transform: 0.2s;
+}
+.product-price{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    color: #1b1e26;
+    text-shadow: 0px 0px 0.5px #1b1e26;
+    background-color: #c5c6d5;
+    font-size: 15px;
+    /* font-style: italic; */
+    font-family: "TG Axima Black";
+}
+select:focus{
+    outline: none;
+}
+select{
+    border-radius: 0px;
+}
+select *{
+    border-radius: 0px;
+}
+.dashboard-product-name{
+    max-height: 55px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.dashboard-product-name::-webkit-scrollbar{
+    width: 1px;
+}
+.dashboard-product-name::-webkit-scrollbar-track{
+    background-color: #1b1e26;
+}
+.dashboard-product-name::-webkit-scrollbar-thumb{
+    background-color: #f03869;
+}
+.delete-image{
+    width: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.delete-image:hover{
+    scale: 1.1;
+    transition: 0.2s ease;
+}
+@keyframes animata-fadeIn {
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes animata-fadeAway {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+@media (max-width: 576px) {
+    .dashboard-main-heading, .dashboard-vapor-squad{
+        margin: 0;
+        writing-mode: horizontal-tb;
+    }
+    .dashboard-main-heading{
+        top: -2px;
+    }
+    .dashboard-vapor-squad{
+        bottom: -5px;
+    }
+    .product-description{
+        max-width: 100%;
+        width: 100% !important;
+    }
+    .dashboard-btn{
+        padding-top: 5px;
+    }
+
+    
+}

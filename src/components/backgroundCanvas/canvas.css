@@ -1,0 +1,32 @@
+.canvas-container{
+    z-index: -1;
+    height: 94svh;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    opacity: 1;
+    animation: animata-fadeIn 0.2s linear 0s 1 forwards;
+}
+
+
+
+
+
+@media (max-width: 998px) {
+    .canvas-container{
+        width: 90svw;
+    }
+}
+@media (max-width: 768px) {
+    .canvas-container{
+        width: 85svw;
+    }
+}@media (max-width: 576px) {
+    .canvas-container{
+        width: 90svw;
+    }
+}@media (max-width: 400px) {
+    .canvas-container{
+        width: 90svw;
+    }
+}
