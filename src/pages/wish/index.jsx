@@ -27,6 +27,18 @@ export default function Wishlist({ handleCartClick, refProp }) {
     newData.sort((a, b) => (a.id > b.id ? 1 : -1));
     dispatch(setData(newData));
   }
+  function handleWishDelete(product) {
+    let newData = data.map((ele) => {
+      if (ele.id === product.id) {
+        return { ...ele, wished: false };
+      }
+      return ele;
+    });
+
+    newData.sort((a, b) => (a.id > b.id ? 1 : -1));
+
+    dispatch(setData(newData));
+  }
 
   return (
     <>
@@ -52,21 +64,31 @@ export default function Wishlist({ handleCartClick, refProp }) {
                 <div className="col-2">
                   <img src={product.image} className="cart-img"></img>
                 </div>
-                <div className="col-10 flex-column d-flex">
-                  <div className="cart-listing-name">{product.title}</div>
-                  <sub className="cart-listing-price">${product.price}</sub>
-                  <button
-                    className="addToCartBtn dashboard-btn"
-                    onClick={() => handleCartAddition(product)}
-                  >
-                    {product.carted ? "already in cart" : "Add to cart"}
-                  </button>
+                <div className="col-10">
+                  <div className="cart-listing-name d-flex me-auto">
+                    {product.title}
+                    <span
+                      className="ms-auto me-1"
+                      onClick={() => handleWishDelete(product)}
+                    >
+                      <img src="/delete.png" className="delete-image"></img>
+                    </span>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <sub className="cart-listing-price">${product.price}</sub>
+                    <button
+                      className="addToCartBtn dashboard-btn"
+                      onClick={() => handleCartAddition(product)}
+                    >
+                      {product.carted ? "already in cart" : "Add to cart"}
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
           <div className="wish-to-cart" onClick={handleCartClick}>
             Go to Cart
-            <img className="checkout-img" src="/public/checkout.png"></img>
+            <img className="checkout-img" src="/checkout.png"></img>
           </div>
         </div>
       </div>

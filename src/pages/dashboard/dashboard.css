@@ -164,7 +164,7 @@
 .product-price{
     margin-top: 3px;
     margin-bottom: 3px;
-    padding-top: 3px;
+    padding-top: 7px;
     padding-bottom: 3px;
     padding-left: 3px;
     color: #1b1e26;
@@ -230,6 +230,7 @@ select *{
     }
     .dashboard-main-heading{
         top: -2px;
+        opacity: 0;
     }
     .dashboard-vapor-squad{
         bottom: -5px;

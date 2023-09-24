@@ -17,6 +17,7 @@ function App() {
   const containerRef = useRef();
   const dashboardRef = useRef();
   const wishlistRef = useRef();
+  const mainheadingRef = useRef();
   const dispatch = useDispatch();
   const routeLocation = useSelector((state) => state.routeLocation);
 
@@ -26,6 +27,8 @@ function App() {
   function handleEnter() {
     const welcomeContainer = welcomeRef.current;
     const canvasContainer = canvasRef.current;
+    const heading = mainheadingRef.current;
+    heading.style.animation = "animata-fadeInHeading 0.2s linear 0s 1 forwards";
     canvasContainer.style.animation =
       "animata-fadeAway 0.2s linear 0s 1 forwards";
     welcomeContainer.style.animation =
@@ -74,7 +77,9 @@ function App() {
 
   return (
     <>
-      <div className="dashboard-main-heading">- Future Deluxe</div>
+      <div className="dashboard-main-heading" ref={mainheadingRef}>
+        - Future Deluxe
+      </div>
       <Container refProp={containerRef}>
         {routeLocation == 0 ? (
           <>

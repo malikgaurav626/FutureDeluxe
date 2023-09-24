@@ -11,8 +11,9 @@
   animation: animata-fadeInHome 0.2s linear 0s 1 forwards;
 }
 .vapor-squad {
-  font-family: "TG Axima Regular";
-  font-size: 25px;
+  font-family: "TG Axima Black";
+  font-size: 20px;
+  text-shadow: 0px 0px 0.5px #c5c6d5;
   writing-mode:sideways-lr;
   position: absolute;
   bottom: 0;

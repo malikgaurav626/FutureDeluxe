@@ -80,3 +80,9 @@ body{
       opacity: 0;
   }
 }
+
+@keyframes animata-fadeInHeading{
+  100%{
+      opacity: 1;
+  }
+}

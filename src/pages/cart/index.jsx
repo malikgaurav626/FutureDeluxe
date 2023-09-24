@@ -116,10 +116,7 @@ export default function Cart() {
                       className="ms-auto me-1"
                       onClick={() => handleCartDelete(product)}
                     >
-                      <img
-                        src="/public/delete.png"
-                        className="delete-image"
-                      ></img>
+                      <img src="/delete.png" className="delete-image"></img>
                     </span>
                   </div>
                   <sub className="cart-listing-price">${product.price}</sub>
@@ -150,7 +147,7 @@ export default function Cart() {
             <p className="m-0 d-flex align-items-center">
               <span className="checkout-title d-flex align-items-center">
                 Checkout
-                <img className="checkout-img" src="/public/checkout.png"></img>
+                <img className="checkout-img" src="/checkout.png"></img>
               </span>{" "}
               <span className="money m-0 ms-auto">
                 ${totalCheckout}

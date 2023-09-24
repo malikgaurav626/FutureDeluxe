@@ -31,6 +31,18 @@ export default function Dashboard({
     newData.sort((a, b) => (a.id > b.id ? 1 : -1));
     dispatch(setData(newData));
   }
+  function handleWishDelete(product) {
+    let newData = data.map((ele) => {
+      if (ele.id === product.id) {
+        return { ...ele, wished: false };
+      }
+      return ele;
+    });
+
+    newData.sort((a, b) => (a.id > b.id ? 1 : -1));
+
+    dispatch(setData(newData));
+  }
   function handleWishAddition(product) {
     let newData = data.filter((ele) => ele.id !== product.id);
     let processedProduct = { ...product, wished: true };
@@ -324,10 +336,7 @@ export default function Dashboard({
                 onClick={handleCartClick}
               >
                 Cart{" "}
-                <img
-                  src="/public/external-link.png"
-                  className="external-link"
-                ></img>
+                <img src="/external-link.png" className="external-link"></img>
               </p>
               {data?.map((product, i) =>
                 product.carted ? (
@@ -337,10 +346,7 @@ export default function Dashboard({
                       className="ms-auto me-1 mb-2"
                       onClick={() => handleCartDelete(product)}
                     >
-                      <img
-                        src="/public/delete.png"
-                        className="delete-image"
-                      ></img>
+                      <img src="/delete.png" className="delete-image"></img>
                     </span>
                   </div>
                 ) : (
@@ -353,15 +359,18 @@ export default function Dashboard({
                 onClick={handleWishClick}
               >
                 Wishlist{" "}
-                <img
-                  src="/public/external-link.png"
-                  className="external-link"
-                ></img>
+                <img src="/external-link.png" className="external-link"></img>
               </p>
               {data?.map((product, i) =>
                 product.wished ? (
-                  <div key={"w-" + i} className="sort-by">
+                  <div key={"w-" + i} className="sort-by d-flex">
                     {product.title}
+                    <span
+                      className="ms-auto me-1 mb-2"
+                      onClick={() => handleWishDelete(product)}
+                    >
+                      <img src="/delete.png" className="delete-image"></img>
+                    </span>
                   </div>
                 ) : (
                   ""
